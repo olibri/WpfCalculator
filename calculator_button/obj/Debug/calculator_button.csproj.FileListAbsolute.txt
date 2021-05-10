@@ -1,0 +1,15 @@
+C:\Users\linec\source\repos\calculator_button\calculator_button\obj\Debug\calculator_button.csprojAssemblyReference.cache
+C:\Users\linec\source\repos\calculator_button\calculator_button\obj\Debug\MainWindow.g.cs
+C:\Users\linec\source\repos\calculator_button\calculator_button\obj\Debug\App.g.cs
+C:\Users\linec\source\repos\calculator_button\calculator_button\obj\Debug\calculator_button_MarkupCompile.cache
+C:\Users\linec\source\repos\calculator_button\calculator_button\obj\Debug\calculator_button_MarkupCompile.lref
+C:\Users\linec\source\repos\calculator_button\calculator_button\bin\Debug\calculator_button.exe.config
+C:\Users\linec\source\repos\calculator_button\calculator_button\bin\Debug\calculator_button.exe
+C:\Users\linec\source\repos\calculator_button\calculator_button\bin\Debug\calculator_button.pdb
+C:\Users\linec\source\repos\calculator_button\calculator_button\obj\Debug\MainWindow.baml
+C:\Users\linec\source\repos\calculator_button\calculator_button\obj\Debug\calculator_button.g.resources
+C:\Users\linec\source\repos\calculator_button\calculator_button\obj\Debug\calculator_button.Properties.Resources.resources
+C:\Users\linec\source\repos\calculator_button\calculator_button\obj\Debug\calculator_button.csproj.GenerateResource.cache
+C:\Users\linec\source\repos\calculator_button\calculator_button\obj\Debug\calculator_button.csproj.CoreCompileInputs.cache
+C:\Users\linec\source\repos\calculator_button\calculator_button\obj\Debug\calculator_button.exe
+C:\Users\linec\source\repos\calculator_button\calculator_button\obj\Debug\calculator_button.pdb
