@@ -24,21 +24,22 @@ namespace Calculator
         double a, b;
         char s;
         bool yes, ChangeZnak_;
+        Window1 window1 ;
         public MainWindow()
         {
             InitializeComponent();
+            window1 = new Window1();
             MessageBox.Show("Логіку взяв з калькулятора на формах " +
                 "лиш переробив під лейбли замість текстбоксів " +
-                "просто по дизайну два лейбла краще виглядають прикупі ніж два текстбокса");
+                "просто по дизайну два лейбла краще виглядають прикупі ніж два текстбокса" +
+                "\n\n\n Є ФІШКА ОДНА ЯКЩО НАЖМЕТЕ НА ТРИ КАРАПКИ МОЖНА КОНВЕРТУВАТИ ВЕЛЕЧИНИ РОЗМІРІВ");
             a = b = 0;
             s = '\0';
             yes = false;
             ChangeZnak_ = false;
             HeadWindow.Content = String.Empty;
-
             Window2.Content = String.Empty;
         }
-
         private bool ChekMinus()
         {
             if(HeadWindow.Content == "" && yes== false)
@@ -100,12 +101,10 @@ namespace Calculator
                 if (item == '.')
                     HeadWindow.Content = HeadWindow.Content.ToString().Replace(".", ",");//перевірка на крапку. Можна було і без цього обійтись але на всякий випадок нехай буде
         }
-
         private void CE_Clear_Click(object sender, RoutedEventArgs e)
         {
             HeadWindow.Content = String.Empty;
         }
-
         private void C_Delete_Click(object sender, RoutedEventArgs e)
         {
             a = 0;
@@ -115,7 +114,6 @@ namespace Calculator
             yes = false;
             ChangeZnak_ = false;
         }
-
         private void Delete_one_symbol_Click(object sender, RoutedEventArgs e)
         {
             HeadWindow.Content = HeadWindow.Content.ToString().Remove(HeadWindow.Content.ToString().Length - 1, 1);
@@ -127,20 +125,16 @@ namespace Calculator
                     return;
                 }
             }
-        }
-
-      
+        }      
         private void SevenBtn_Click(object sender, RoutedEventArgs e)
         {
             HeadWindow.Content += "7";
         }
-
         private void EightBtn_Click(object sender, RoutedEventArgs e)
         {
             HeadWindow.Content += "8";
 
         }
-
         private void NineBtn_Click(object sender, RoutedEventArgs e)
         {
             HeadWindow.Content += "9";
@@ -151,39 +145,31 @@ namespace Calculator
             HeadWindow.Content += "4";
 
         }
-
         private void FiveBtn_Click(object sender, RoutedEventArgs e)
         {
             HeadWindow.Content += "5";
 
         }
-
         private void SixBtn_Click(object sender, RoutedEventArgs e)
         {
             HeadWindow.Content += "6";
 
         }
-
         private void OneBtn_Click(object sender, RoutedEventArgs e)
         {
             HeadWindow.Content += "1";
 
         }
-
         private void TwoBtn_Click(object sender, RoutedEventArgs e)
         {
             HeadWindow.Content += "2";
 
         }
-
         private void ThreeBtn_Click(object sender, RoutedEventArgs e)
         {
             HeadWindow.Content += "3";
 
         }
-
-
-
         private void Division_Click(object sender, RoutedEventArgs e)
         {
             if (ChangeZnak_ == true)
@@ -217,9 +203,6 @@ namespace Calculator
             }
             Diya('+', "+", sender, e);
         }
-
-      
-
         private void Minus_Click(object sender, RoutedEventArgs e)
         {
             if (ChangeZnak_ == true)
@@ -234,19 +217,16 @@ namespace Calculator
                 return;
             Diya('-', "-", sender, e);
         }
-
         private void Point_Click(object sender, RoutedEventArgs e)
         {
             HeadWindow.Content += ",";
 
         }
-
         private void Zero_Click(object sender, RoutedEventArgs e)
         {
             HeadWindow.Content += "0";
 
         }
-
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.Key == Key.D1 || e.Key == Key.NumPad1)
@@ -318,7 +298,6 @@ namespace Calculator
                 Point_Click(sender, e);
             }
         }
-
         private void Zerult_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -353,10 +332,17 @@ namespace Calculator
             }
             
         }
-
         private void Znak_Click(object sender, RoutedEventArgs e)
         {
             ChangeZnak_ = true;
+        }
+
+        private void Navigation_Click(object sender, RoutedEventArgs e)
+        {
+            //this.Close(); //закоментував бо незнаю як потім його назад відкрити 
+            MessageBox.Show("просто вводьте на нумпаді числа які хочете конвертувати але спочатку виберіть велечини \nдля конвертації і просто їх вписуйте");
+            window1.Show();
+
         }
     }
 }

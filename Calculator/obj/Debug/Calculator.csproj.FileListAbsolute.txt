@@ -13,3 +13,5 @@ C:\Users\linec\source\repos\calculator_button\Calculator\obj\Debug\Calculator.cs
 C:\Users\linec\source\repos\calculator_button\Calculator\obj\Debug\Calculator.exe
 C:\Users\linec\source\repos\calculator_button\Calculator\obj\Debug\Calculator.pdb
 C:\Users\linec\source\repos\calculator_button\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+C:\Users\linec\source\repos\calculator_button\Calculator\obj\Debug\Window1.g.cs
+C:\Users\linec\source\repos\calculator_button\Calculator\obj\Debug\Window1.baml
